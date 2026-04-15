@@ -63,6 +63,21 @@ function closeContactModal() {
 }
 
 function submitContact() {
-  alert("Este formulario aún no está implementado. Pronto podrás enviarme mensajes directamente.");
+  alert("Gracias por tu mensaje. Pronto me pondré en contacto contigo.");
   closeContactModal();
+}
+
+// Modal Projects con beep retro
+function openModal(message) {
+  document.getElementById("modal-message").innerText = message;
+  document.getElementById("project-modal").style.display = "flex";
+  const beep = document.getElementById("beep-sound");
+  if (beep) {
+    beep.currentTime = 0;
+    beep.play();
+  }
+}
+
+function closeModal() {
+  document.getElementById("project-modal").style.display = "none";
 }
