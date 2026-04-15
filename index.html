@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeoDev Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>NeoDev Portfolio</header>
+<nav>
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#" onclick="openContactModal()">Contact</a>
+</nav>
+
+<!-- Modal Contact -->
+<div id="contact-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeContactModal()">&times;</span>
+    <h2>Contact</h2>
+    <p>Escribe tu mensaje aquí:</p>
+    <form class="contact-form" onsubmit="submitContact(); return false;">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </div>
+</div>
+
+  <!-- Hero -->
+  <section id="hero" class="fade-in">
+    <div class="hero-text">
+      <h1>¡Hola! Soy Gabriel </h1>
+      <p>Desarrollador Frontend especializado en experiencias digitales modernas y funcionales.</p>
+      <a href="#projects" class="btn">Ver Mis Trabajos</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="reveal">
+    <h2>About</h2>
+    <div class="about-container">
+      <p>Me apasiona transformar ideas en interfaces intuitivas y visualmente impactantes. Mi enfoque combina diseño limpio, rendimiento optimizado y estética tecnológica moderna.</p>
+      <p>Trabajo con tecnologías actuales y me mantengo en constante aprendizaje para ofrecer soluciones innovadoras y eficientes.</p>
+    </div>
+  </section>
+
+<!-- Skills -->
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <!-- Columna izquierda -->
+    <div class="skills-column">
+      <div class="skill">
+        <span>HTML & CSS</span>
+        <div class="skill-bar">
+          <div class="skill-level" data-level="5">5/5</div>
+        </div>
+        <p class="skill-desc">Dominio sólido en maquetación y estilos web.</p>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="skill-bar">
+          <div class="skill-level" data-level="4">4/5</div>
+        </div>
+        <p class="skill-desc">Experiencia en interactividad y lógica de aplicaciones.</p>
+      </div>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="skills-column">
+      <div class="skill">
+        <span>React</span>
+        <div class="skill-bar">
+          <div class="skill-level" data-level="3.5">3.5/5</div>
+        </div>
+        <p class="skill-desc">Construcción de interfaces dinámicas y componentes reutilizables.</p>
+      </div>
+      <div class="skill">
+        <span>Node.js</span>
+        <div class="skill-bar">
+          <div class="skill-level" data-level="3">3/5</div>
+        </div>
+        <p class="skill-desc">Desarrollo de APIs y aplicaciones backend eficientes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects -->
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project-card">
+      <img src="images/ecommerce.png" alt="E-commerce Neon Market">
+      <h3>E-commerce Neon Market</h3>
+      <button class="btn" onclick="openModal('Este proyecto aún no está implementado')">Ver Proyecto</button>
+    </div>
+    <div class="project-card">
+      <img src="images/dashboard.png" alt="Dashboard Cyberpunk">
+      <h3>Dashboard Cyberpunk</h3>
+      <button class="btn" onclick="openModal('Este proyecto aún no está implementado')">Ver Proyecto</button>
+    </div>
+    <div class="project-card">
+      <img src="images/terminal.gif" alt="Terminal Virtual Hacker" class="gif-right">
+      <h3>Terminal Virtual Hacker</h3>
+      <button class="btn" onclick="openModal('Este proyecto aún no está implementado')">Ver Proyecto</button>
+    </div>
+  </div>
+</section>
+
+<!-- Modal personalizado -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <p id="modal-message"></p>
+  </div>
+</div>
+
+<!-- Sonido retro -->
+<audio id="beep-sound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+
+<script>
+  function openModal(message) {
+    document.getElementById('modal-message').innerText = message;
+    document.getElementById('project-modal').style.display = 'flex';
+    document.getElementById('beep
+
+
+  <footer>
+    © 2026 NeoDev Portfolio
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
